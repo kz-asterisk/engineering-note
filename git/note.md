@@ -121,7 +121,9 @@
 
   ```bash
   [alias]
-          plog = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso
+          plog = log --pretty=
+          'format:%C(yellow)%h %C(green)%cd %C(reset)%s 
+          %C(red)%d %C(cyan)[%an]' --date=iso
   ```
 
 ### upstream-branch(追跡ブランチ)
