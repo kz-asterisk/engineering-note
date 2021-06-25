@@ -1,50 +1,64 @@
-engineering-note
+# engineering-note
+
 ========================================
 
 Storing the knowledge gained from engineering work
 
-
 ## 🗼Description
+
 - XXX
 
 ## 🚀Getting Started
+
 - xxx
 
 ### Rererequisites
+
 - xxx
 
 ### installing
+
 - xxx
 
 ## 🤖Running the tests
+
 - xxx
 
 ## 📗Useage
+
 - xxx
 
 ## 🤑Auther
+
 - kz
 
 ## 🎊Acknowledgements
+
 - xxx
 
 ## 🔰License
+
 - XXX
 
-
 ## 📃For Devlope
+
 ### Do
+
 #### Functional Requirements
+
 - XXX
 
 #### Non-Functional Requirements
+
 - XXX
 
 ### Don't
 
 ### Todo
+
 - Introduction
-    ```
+
+    ```text
     Git
     Basic Terminal Usage
     Data Structures & Algorithms
@@ -56,8 +70,10 @@ Storing the knowledge gained from engineering work
     Design Pattern
     Charactor Encording
     ```
+
 - Backend
-    ```
+
+    ```text
     Internet
     Basic Frontend Knowledge
     OS and General Knowledge
@@ -81,8 +97,10 @@ Storing the knowledge gained from engineering work
     Web Servers
     Building for Scale
     ```
+
 - DevOps
-    ```
+
+    ```text
     Learn a Programming Language
     Understand different OS Concepts
     Learn abount Managing Servers
@@ -111,6 +129,8 @@ Storing the knowledge gained from engineering work
     ```
 
 #### Jira
+
 ##### Memo
-- Reference 
-    - https://github.com/kamranahmedse/developer-roadmap
+
+- Reference
+  - <https://github.com/kamranahmedse/developer-roadmap>
