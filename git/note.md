@@ -113,7 +113,6 @@
 - branch名の由来とかgit運用の一般的な文化に触れて
   - <https://qiita.com/Yu-kiFujiwara/items/40b503683d6525c8d274>
 
-
 ## 実際のお仕事で使ったこと
 
 ### .gitconfig
