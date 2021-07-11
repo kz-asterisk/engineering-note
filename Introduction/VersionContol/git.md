@@ -176,3 +176,11 @@
 ### cherry-pick
 
 - 特定のブランチの特定のコミットを任意のブランチのコミットとして反映させる
+
+### gitが呼び出すテキストエディタを変更
+
+- ubunutuの場合nanoをデフォルトだと起動するのでvimへ変更
+
+  ```bash
+  git config --global core.editor 'vim -c "set fenc=utf-8"'
+  ```

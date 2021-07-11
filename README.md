@@ -59,7 +59,7 @@ Storing the knowledge gained from engineering work
 - Introduction
 
     ```text
-    Git
+    Version Contol
     Basic Terminal Usage
     Data Structures & Algorithms
     GitHub
