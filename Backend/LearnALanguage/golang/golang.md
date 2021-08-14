@@ -140,3 +140,44 @@ golangを使うときの自分用メモ
     - `go f(x, y, z)` で呼び出せる
       - fは関数
     - goroutineは、同じアドレス空間で実行されるため、共有メモリへのアクセスは必ず同期する必要がある
+  - scan
+    - 単純系
+
+      ```go
+      var input string
+      fmt.Scan(&変数)
+      ```
+
+    - 配列/スライスに格納したい
+
+      ```go
+      inputS := make([]string,要素数)
+      for i := 0; i < 要素数; i ++ {
+        fmt.Scan(&変数[i])
+      }
+      ```
+
+    - Scan, Scanf, Scanln はos.Stdin から読み取る。
+    - Fscan, Fscanf, Fscanln は，指定された io.Reader から読み取る。
+    - Sscan, Sscanf, Sscanln は引数文字列から読み取る
+    - Scan, Fscan, Sscan は入力の改行をスペースとして扱う。
+    - Scanln, Fscanln, Sscanln は改行でスキャンを停止する。
+      - アイテムの後に改行または EOF が続く必要がある。
+    - Scanf, Fscanf, Sscanf は，フォーマット文字列に従って引数を解析する。
+  - シングルクォーテとダブルクォーテーション
+    - シングルクォーテはrune型というものになる
+    - ダブルクォーテーションで文字列を定義すること
+  - 階乗(factorial)のライブラリがない
+    - 再帰で作る
+  - strings.Join(配列,結合文字列)
+    - 配列の文字を結合する
+  - 空スライスの作成方法
+    - スライス名 := []型名{}
+      - `emptyS := []string{}`
+  - sort
+    - `import sort`
+      - `sort.Ints` で数値並べ替え昇順
+  - 文字/数字変換
+    - "strconv"
+      - 文字を数値にする `i,_ = strconv.Atoi(s)`
+      - 数値を文字にする `s = strconv.Itoa(i)`
