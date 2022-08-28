@@ -17,11 +17,13 @@ youtube動画で得た知見のメモ
     - JavaScriptで作られたアプリを読み込む
     - REST APIでJsonをやりとり
     - スマホアプリのような動き
-      ```
+
+      ```text
       通常のWebサイトの場合、次のぺージを閲覧する際に、ハイパーリンクを用いて、
       サーバに別のページのリクエストを送信するが、SPAではアプリ内でルーティングし、
       APIをコールなどして別の情報が表示される。
       ```
+
 - [AIから不公平なバイアスを取り除く AI Fairness 360 Open Source Toolkit 2020-4-24 B-4](https://www.youtube.com/watch?v=NxdlTZ2ZiFA)
   - DeepLerningの学習過程でバイアスが発生する
   - AI Fairness という OSSでバイアスを取り除く事が出来る
