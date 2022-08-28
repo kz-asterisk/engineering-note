@@ -255,3 +255,32 @@ for _, ele := range fullname {
   }
 }
 ```
+
+## 行単位で読み込む
+
+- スペースがあるとsliceに入れる際に一つの要素としてCountされる
+- 何かしらの文字列で結合して一文字列にする
+
+  ```golang
+  var s = bufio.NewScanner(os.Stdin)
+  
+  for i := 0; i < N; i++ {
+    s.Scan()
+    tmp := []string{}
+    tmp = append(tmp, s.Text())
+    numStr := strings.Join(tmp, " ")
+    numStr = strings.ReplaceAll(numStr, " ", "-")
+    L[i] = numStr
+    }
+  ```
+
+## byte型の使い方
+
+- 文字列及び数値を1文字ずつ処理するのに便利
+  - 文字列の場合、通常でいいえばstring[0:1]のように範囲指定が必要
+  - byte型の場合はbyte[0]のように一発で指定可能
+
+## 最小値と最大値
+
+- sliceはsort.IntSlice(slice) -> Min:slice[0] Max:slice[len(slice)-1]
+- 二値はmath.Max/Min
