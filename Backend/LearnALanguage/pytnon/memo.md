@@ -9,8 +9,8 @@ class MyEmptyClass:
      pass
 ```
 
-- 関数の引数が**はdictや*はタプル
-  - **は最後じゃなきゃだめ
+- 関数の引数が\*\*はdictや\*はタプル
+  - \*\*は最後じゃなきゃだめ
 
 ```python
 def cheeseshop(kind, *arguments, **keywords):
@@ -30,6 +30,7 @@ cheeseshop("Limburger", "It's very runny, sir.",
 ```
 
 - リスト内包表記
+
   - 無駄に変数作らない事が出来る
 
   ```python
@@ -38,13 +39,15 @@ cheeseshop("Limburger", "It's very runny, sir.",
   ```
 
 - from XXX import $$$
+
   - モジュール内の名前(XXX)を、import を実行しているモジュールのシンボルテーブル内に直接取り込む
   - $$$という名前の関数をそのまま実行できる
   - from XXX import *　で全部
   - import XXX as alias_XXX で名前変えて呼び出せる
-  - form XXX import $$$ as alias_* で名前変えて呼び出せる
+  - form XXX import $$$ as alias\_\* で名前変えて呼び出せる
 
 - モジュール検索パス
+
   - インタープリターはまずその名前のビルトインモジュールを探します
   - 見つからなかった場合は、 spam.py という名前のファイルを sys.path にあるディレクトリのリストから探します
   - sys.path
@@ -52,9 +55,12 @@ cheeseshop("Limburger", "It's very runny, sir.",
     - PYTHONPATH (ディレクトリ名のリスト。シェル変数の PATH と同じ構文)。
     - The installation-dependent default (by convention including a site-packages directory, handled by the site module).
       - /usr/local/lib/pythonX.Y/site-packages/bar
-      -/usr/local/lib/pythonX.Y/site-packages/foo
+        -/usr/local/lib/pythonX.Y/site-packages/foo
+
 - 組込み関数 dir() は、あるモジュールがどんな名前を定義しているか調べるために使われます
+
 - パッケージ (package) は、Python のモジュール名前空間を "ドット付きモジュール名" を使って構造化する手段
+
   - モジュールを利用すると、別々のモジュールの著者が互いのグローバル変数名について心配しなくても済むようになる
 
   ```dir
@@ -90,17 +96,25 @@ cheeseshop("Limburger", "It's very runny, sir.",
       - `__all__ = ["echo", "surround", "reverse"]`
 
 - 警告 f.write() を with キーワードや f.close() を使わずに呼び出した場合、プログラムが正常に終了した場合でも、 f.write() の実引数がディスクに完全に 書き込まれないことがあります 。
+
 - エラーには (少なくとも) 二つのはっきり異なる種類が
+
   - 構文エラー (syntax error)
   - 例外 (exception)
+
 - try: except
+
   - 通常except発生したらプログラムが異常終了するが、そうならないようするとかできる
   - finally: でクリーンナップ動作を定義できる
+
 - raise 文を使って、特定の例外を発生させる
+
   - raise の唯一の引数は例外インスタンスか例外クラス (Exception を継承したクラス)
   - 例外が発生したかどうかを判定したいだけで、その例外を処理するつもりがなければ、単純な形式の raise 文を使って例外を再送出させることができます:
+
 - クラスを理解するために
-  - 名前空間 (namespace) とは、名前からオブジェクトへの対応付け (mapping) 
+
+  - 名前空間 (namespace) とは、名前からオブジェクトへの対応付け (mapping)
     - ほとんどの名前空間は、現状では Python の辞書として実装されています
     - 二つの別々のモジュールの両方で関数 maximize という関数を定義することができ、定義自体は混同されることはありません
   - 属性 という言葉は、ドットに続く名前すべてに対して使っています
@@ -138,9 +152,10 @@ cheeseshop("Limburger", "It's very runny, sir.",
     After nonlocal assignment: nonlocal spam
     After global assignment: nonlocal spam
     In global scope: global spam
-    ```
+  ```
 
   - クラスが __init__() メソッドを定義している場合、クラスのインスタンスを生成すると、新しく生成されたクラスインスタンスに対して自動的に __init__() を呼び出します
+
     - __init__() メソッドに複数の引数をもたせることができます
 
     ```python

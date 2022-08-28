@@ -1,6 +1,6 @@
 # zsh
 
-========================================
+\========================================
 
 zshの使い方
 
@@ -8,7 +8,7 @@ zshの使い方
 
 - Web系ではbash以外を使う的な文化があったりなかったり
   - 見た目がオシャンになる
-    ![oshan](../../img/oshan.png )
+    ![oshan](../../img/oshan.png)
   - bashより良さげな機能があるから
     - 補完機能(コマンドの途中で「これかい？」と表示してくる)とか便利
 
@@ -25,6 +25,7 @@ zshの使い方
 ### プロンプトをかっこよくする
 
 - install
+
   - [prezto](https://github.com/sorin-ionescu/prezto)
 
   ```zsh
@@ -39,6 +40,7 @@ zshの使い方
   ```
 
 - 設定
+
   - 下記ファイルを修正する
 
     ```zsh
@@ -71,6 +73,7 @@ zshの使い方
       - [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
     - フォントインストール
+
       - powerline用のフォントが文字化けないようにする
         - [HackGen](https://github.com/yuru7/HackGen)
       - ターミナルやらエディタのターミナルのフォントへ設定
@@ -80,19 +83,19 @@ zshの使い方
 
 ### bashの設定を移行
 
-  ```bash
-  cat ~/.bash_profile >> ~/.zprofile
-  ```
+```bash
+cat ~/.bash_profile >> ~/.zprofile
+```
 
-  ```text
-  ※注意事項※
-  下記あたりに関連する設定はzshでは読み込めずエラーとなるので除外するが吉
-  source ~/git-prompt.sh
-  source ~/git-completion.bash
-  ```
+```text
+※注意事項※
+下記あたりに関連する設定はzshでは読み込めずエラーとなるので除外するが吉
+source ~/git-prompt.sh
+source ~/git-completion.bash
+```
 
 #### zsh上の色確認方法
 
-  ```bash
-  for c in {000..255}; do echo -n "\e[38;5;${c}m $c" ; [ $(($c%16)) -eq 15 ] && echo;done;echo
-  ```
+```bash
+for c in {000..255}; do echo -n "\e[38;5;${c}m $c" ; [ $(($c%16)) -eq 15 ] && echo;done;echo
+```

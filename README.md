@@ -1,6 +1,6 @@
 # engineering-note
 
-========================================
+\========================================
 
 Storing the knowledge gained from engineering work
 
@@ -58,75 +58,75 @@ Storing the knowledge gained from engineering work
 
 - Introduction
 
-    ```text
-    Version Contol
-    Basic Terminal Usage
-    Data Structures & Algorithms
-    GitHub
-    Licenses
-    Semantic Versioning
-    SSH
-    HTTP/HTTPS and APIs
-    Design Pattern
-    Charactor Encording
-    ```
+  ```text
+  Version Contol
+  Basic Terminal Usage
+  Data Structures & Algorithms
+  GitHub
+  Licenses
+  Semantic Versioning
+  SSH
+  HTTP/HTTPS and APIs
+  Design Pattern
+  Charactor Encording
+  ```
 
 - Backend
 
-    ```text
-    Internet
-    Basic Frontend Knowledge
-    OS and General Knowledge
-    Learn a Language
-    Version Control System
-    Repo hosting service
-    Relational Databases
-    NoSQL Databases
-    More about Databases
-    Learn about APIs
-    Testing
-    CI/CD
-    Design and Development Principles
-    Architectual Patterns
-    Search Enginges
-    Message Brokers
-    Containerization vs Virtualization
-    GraphQL
-    GarphDatabases
-    WebSockets
-    Web Servers
-    Building for Scale
-    ```
+  ```text
+  Internet
+  Basic Frontend Knowledge
+  OS and General Knowledge
+  Learn a Language
+  Version Control System
+  Repo hosting service
+  Relational Databases
+  NoSQL Databases
+  More about Databases
+  Learn about APIs
+  Testing
+  CI/CD
+  Design and Development Principles
+  Architectual Patterns
+  Search Enginges
+  Message Brokers
+  Containerization vs Virtualization
+  GraphQL
+  GarphDatabases
+  WebSockets
+  Web Servers
+  Building for Scale
+  ```
 
 - DevOps
 
-    ```text
-    Learn a Programming Language
-    Understand different OS Concepts
-    Learn abount Managing Servers
-    Learn to live in live Terminal
-    Operationg System
-    Networking, Security and Protocols
-    Reverse Proxy
-    Forward Proxy
-    Caching Server
-    Load Balancer
-    Firewall
-    Web Server
-    Learn Infrastructure as Code
-    Service Mesh
-    Learn some CI/CD Tool
-    Containers
-    Configuration Management
-    Container Orchestrarion
-    Infrastrucure Provisionig
-    Learn how to monitor software and infrastructure
-    Infrastructure Monitoring
-    Application Monitoring
-    Logs Management
-    Cloud Providers
-    Cloud Design Patterns
-    ```
+  ```text
+  Learn a Programming Language
+  Understand different OS Concepts
+  Learn abount Managing Servers
+  Learn to live in live Terminal
+  Operationg System
+  Networking, Security and Protocols
+  Reverse Proxy
+  Forward Proxy
+  Caching Server
+  Load Balancer
+  Firewall
+  Web Server
+  Learn Infrastructure as Code
+  Service Mesh
+  Learn some CI/CD Tool
+  Containers
+  Configuration Management
+  Container Orchestrarion
+  Infrastrucure Provisionig
+  Learn how to monitor software and infrastructure
+  Infrastructure Monitoring
+  Application Monitoring
+  Logs Management
+  Cloud Providers
+  Cloud Design Patterns
+  ```
 
 #### Jira
 
