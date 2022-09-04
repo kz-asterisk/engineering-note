@@ -1,2 +1,0 @@
-def cry():
-    print("Gyaaaaa!!!")

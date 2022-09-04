@@ -253,3 +253,10 @@ cheeseshop("Limburger", "It's very runny, sir.",
   - `poetry shell` で起動
   - `poetry run pyton XXX` で実行
   - `poetry run pyton pytest` とかも実行可能
+
+- クラスにメソッド作る時はselfを引数に入れる
+  - 入れない場合、外部から呼び出した際に引数エラー(takes 0 positional arguments but 1 was given)が発生
+  - 外部からメソッドを呼ぶときに暗黙的にselfを渡しているため
+  - [Ref.](https://office54.net/python/error/python-typeerror-argument)
+
+- formatは[PEP8](https://peps.python.org/pep-0008/)

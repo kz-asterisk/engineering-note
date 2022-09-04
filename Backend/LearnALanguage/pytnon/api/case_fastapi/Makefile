@@ -15,6 +15,9 @@ format:	## Format all Python files
 				$(POETRY) run isort .
 				$(POETRY) run black .
 
+test: ## Test All Pyhon files
+				$(POETRY) run pytest -v --cov=. --cov-report=html
+
 run:		## Start API Server on LocalEnvironmet
 				$(POETRY) run uvicorn main:app --reload
 
