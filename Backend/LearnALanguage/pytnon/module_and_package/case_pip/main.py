@@ -1,0 +1,3 @@
+def chometaro():
+  print("chometaro!")
+

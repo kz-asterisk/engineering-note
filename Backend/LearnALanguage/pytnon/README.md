@@ -1,6 +1,14 @@
 # python is ニシキヘビ
 
-## メモ
+## api
+
+- fastapiとか使ってみたい([/api]([./api/)にまとめる)
+
+## cicd
+
+- 最低限のテストとデプロイについて([/cicd]([./cicd/)にまとめる)
+
+## Syntax的な部分等、雑多はこちら
 
 - pass
 
@@ -168,3 +176,80 @@ cheeseshop("Limburger", "It's very runny, sir.",
     >>> x.r, x.i
     (3.0, -4.5)
     ```
+
+### Tips
+
+- CLIからpythonファイルの関数を直接実行
+
+  ```python
+  python -c "import main; main.chometaro()";
+  ```
+
+  - import XXXのXXXはファイル名(上述は同一ディレクトリ上のmain.pyの例)
+
+- venv
+
+  - 普段poetryにて暗黙的に作っているので敢えてやってみる
+  - 仮想環境作成
+
+    ```bash
+    python -m venv .venv
+    ```
+
+    - `.venv` が仮想環境名
+    - poetryがこの名前でディレクトリ作るしgitignore的にもこれがよさげ
+    - -m の意味
+
+      ```text
+      -m mod : run library module as a script (terminates option list)
+      ```
+
+      - 標準でインストールされているモジュールは[ここ](https://docs.python.org/3/py-modindex.html)にある
+        - venvもある
+    - 仮想環境起動
+
+      ```bash
+      source .venv/bin/activate
+      ```
+
+    - 仮想環境停止
+
+      ```bash
+      deactivate
+      ```
+
+- Pipenv
+
+  - 仮想環境作成とライブラリ管理両方を行うツール
+  - `pip install pipenv` でインストール
+  - `pipenv install ${pythonバージョン}` で仮想環境作成
+    - こんな感じで仮想環境出来上がる
+
+      ```bash
+      /home/kz/.local/share/virtualenvs/case_pipenv-GKwsGtJV
+      ```
+
+  - `pipenv shell` で起動
+  - `pipenv install pandas` のように外部モジュールをインストール
+    - `Pipfile` と `Pipfile.lock` が生成される
+    - Pipfile
+      - pythonバージョンやPipenv経由でインストールしたモジュールのバージョン情報がtomlで記載されている
+    - Pipfile.lock
+      - 依存モジュールについて記載されているもの
+    - pipenv sync を使うと意図しないアップデートがなされない見込み
+      - [参考になる資料](https://dev.classmethod.jp/articles/pipenv-sync-is-useful/)
+
+- poetry
+  - 仮想環境作成とライブラリ管理両方を行うツール
+  - Pipenvとの違いはPEP518に従ったpyproject.tomlを利用するところ
+    - モジュール以外にメタデータやビルド設定などをまとめて書ける
+    - [Ref.](https://peps.python.org/pep-0518/#specification)
+  - `poetry new XXX` でプロジェクト作成
+    - testディレクトリ等々含めて自動で生成してくれる
+  - `poetry init` で既存プロジェクトをpoetry管理できる
+  - `poetry add` でモジュール追加
+    - pyproject.tomlにモジュール名が書かれる
+    - poetry.lock に依存関係のパッケージが記載される
+  - `poetry shell` で起動
+  - `poetry run pyton XXX` で実行
+  - `poetry run pyton pytest` とかも実行可能
